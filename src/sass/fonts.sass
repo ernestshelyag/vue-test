@@ -1,0 +1,26 @@
+=main-font
+  font-family: 'lato', Helvetica, sans-serif
+
+=secondary-font
+  font-family: 'thirsty', Helvetica, sans-serif
+
+=font-face($font-family, $file-path, $weight: normal, $style: normal)
+  @font-face
+    font-family: $font-family
+    src: url('#{$file-path}.woff2') format('woff2'), url('#{$file-path}.woff') format('woff')
+    font-weight: $weight
+    font-style: $style
+
++font-face('thirsty', 'assets/fonts/thirstyscriptregular-webfont', 400)
+
++font-face('lato', 'assets/fonts/lato-hairline', 100)
++font-face('lato', 'assets/fonts/lato-thin', 200)
++font-face('lato', 'assets/fonts/lato-light', 300)
++font-face('lato', 'assets/fonts/lato-regular', 400)
++font-face('lato', 'assets/fonts/lato-medium', 500)
++font-face('lato', 'assets/fonts/lato-semibold', 600)
++font-face('lato', 'assets/fonts/lato-bold', 700)
++font-face('lato', 'assets/fonts/lato-heavy', 800)
++font-face('lato', 'assets/fonts/lato-black', 900)
++font-face('lato', 'assets/fonts/lato-italic', 400, italic)
++font-face('lato', 'assets/fonts/lato-bolditalic', 700, italic)

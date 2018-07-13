@@ -1,0 +1,30 @@
+*, *:before, *:after
+  box-sizing: border-box
+  outline: none
+
+*::selection
+  background: rgba($main-col, .8)
+  color: white
+
+html
+  text-size-adjust: none
+  font-size: 16px
+
+body
+  +main-font
+  color: $font-col
+  overflow-x: hidden
+
+a
+  +tr
+  display: inline-block
+  text-decoration: none
+
+span
+  display: inline-block
+
+p, a, span, i, li, sup
+  line-height: 1.2
+
+p span
+  padding: 0 em(3,16)
